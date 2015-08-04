@@ -1,0 +1,38 @@
+body {
+	background-color: lightgrey;
+}
+.panel-cover__logo {
+	width: 60px;
+	float: none;
+	border-radius: 50%;
+	border: 3px solid #FFF;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);}
+.header-title {
+	background-color: lightskyblue;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+.header-title--maintitle {
+	margin: 0;
+	margin-top: 0.5em;
+}
+.header-title--maintitle a {
+	color: #FFF;
+}
+.header-title--subtitle {
+	margin-top: 0.5em;
+	color: #EAEAEA;
+	font-size: 1em;
+	font-weight: 300;
+}
+.header-title--subtitle a {
+	color: #EAEAEA;
+	text-decoration: underline;
+}
+.social {
+	margin-top: 5px;
+}
+.social img {
+	margin-left: 5px;
+}
