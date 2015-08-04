@@ -3,15 +3,22 @@ var React = require('react');
 var SocialNetworkBar = React.createClass({
     getInitialState: function () {
         return {
-            social: this.props.networks
+            social: this.props.networks,
+            mail: this.props.mail
         }
     },
     render: function () {
+
+        var links = this.state.social.map(
+            function(t) {
+                var image = "./social_icons/" + t.name + ".png";
+                return <a href={t.link} target="_blank"><img src={image} alt={t.name} /></a>
+            }
+        );
+
         return <div className="social">
-            <a href="#" target="_blank"><img src="./social_icons/dribbble.png" alt=" " /></a>
-            <a href="#" target="_blank"><img src="./social_icons/flickr.png" alt="" /></a>
-            <a href="https://www.facebook.com/aywengo" target="_blank"><img src="./social_icons/facebook.png" alt="" /></a>
-            <a href="https://twitter.com/aywengo" target="_blank"><img src="./social_icons/twitter.png" alt="" /></a>
+            <a href={this.state.mail} target="_blank"><img src="./social_icons/email.png" alt={this.state.mail} /></a>
+            {links}
         </div>;
     }
 });

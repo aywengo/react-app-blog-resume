@@ -19,7 +19,7 @@ var SiteHeader = React.createClass({
                  className="panel-cover__logo"/>
             <h2 className="header-title--maintitle">
                 <a href="/">{this.state.title}</a></h2>
-            <SocialNetworks networks={this.state.social}/>
+            <SocialNetworks networks={this.state.social} mail= {this.state.mail}/>
         </div>;
     }
 });

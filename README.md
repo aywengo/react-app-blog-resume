@@ -6,6 +6,8 @@ Start developing React JS applications easily with the included tooling. Using g
 
 Read more about how it works at: [React JS workflow, part 2](http://christianalfoni.github.io/javascript/2014/10/30/react-js-workflow-part2.html)
 
+Icons are taken from [here](http://www.iconarchive.com/show/basic-round-social-icons-by-sicons.3.html)
+
 ### Install
 
 * Clone the repo
