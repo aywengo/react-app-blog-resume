@@ -12,27 +12,6 @@ The boilerplate is minimalistic, meaning you have to expand on the current workf
 * Clone the repo
 * Run `npm install`
 
-### Changes
-
-**2.2.3**
-  - Now works with React 0.13.1 (Thanks to @fatso83)
-
-**2.2.2**
-  - Added es5 shim to testrunner-phantom.js html as phantomJS does not have bind etc.
-
-**2.2.1**
-
-  - Updated package.json dep versions
-
-**2.2.0**
-
-  - Using gulp-watch instead of gulp.watch, now reacts to adding and deleting files
-
-**2.1.0**
-
-  - Fixed watch bug
-  - Deploy does not include react-addons
-
 ### Development
 * Run `gulp`
 * Go to `localhost:8889` to display the app
