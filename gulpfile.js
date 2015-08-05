@@ -121,7 +121,7 @@ var browserifyTask = function (options) {
     
   }
   
-}
+};
 
 var cssTask = function (options) {
     if (options.development) {
@@ -144,7 +144,7 @@ var cssTask = function (options) {
         .pipe(cssmin())
         .pipe(gulp.dest(options.dest));   
     }
-}
+};
 
 var assetsTask = function (options) {
   if (options.development) {
@@ -164,7 +164,7 @@ var assetsTask = function (options) {
     gulp.src(options.src)
         .pipe(gulp.dest(options.dest));
   }
-}
+};
 
 // Starts our development workflow
 gulp.task('default', function () {

@@ -1,5 +1,5 @@
 {
-  "name": "vcard-blog-react-app-boilerplate",
+  "name": "react-app-blog-resume",
   "version": "2.2.2",
   "description": "VCard and blog React application boilerplate",
   "author": "Roman Melnyk",
@@ -7,6 +7,7 @@
   "devDependencies": {
     "browserify": "^10.2.1",
     "glob": "^4.0.6",
+    "global": "^4.3.0",
     "gulp": "^3.8.9",
     "gulp-concat": "^2.3.4",
     "gulp-connect": "^2.2.0",
