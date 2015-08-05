@@ -1,6 +1,13 @@
 body {
-	background-color: lightgrey;
+	background: url('./images/tile.jpg');
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
 }
+
+
+
 .panel-cover__logo {
 	width: 60px;
 	float: none;

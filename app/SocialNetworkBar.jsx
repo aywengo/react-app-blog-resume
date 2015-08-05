@@ -15,9 +15,10 @@ var SocialNetworkBar = React.createClass({
                 return <a href={t.link} target="_blank"><img src={image} alt={t.name} /></a>
             }
         );
+        var mailto = "mailto:" + this.state.mail;
 
         return <div className="social">
-            <a href={this.state.mail} target="_blank"><img src="./social_icons/email.png" alt={this.state.mail} /></a>
+            <a href={mailto} target="_blank"><img src="./social_icons/email.png" alt={this.state.mail} /></a>
             {links}
         </div>;
     }

@@ -1,0 +1,314 @@
+/* #General
+================================================== */
+.content {
+    background-color: #fff; }
+.topAddress {
+    text-align: right;
+    font-size: 12px;
+    color: #999999;
+    line-height: 150%;
+    padding-top: 20px;
+    background: url('./images/shadow-address.jpg') no-repeat 0px 0px; }
+.desc {
+    font-size: 13px;
+    color: #999999;
+    line-height: 150%; }
+
+/* #Navigation
+================================================== */
+nav a, nav a:hover, nav a:focus, nav a:visited {
+    color: #fff;
+    line-height: 250%; }
+nav a {
+    text-decoration: none;
+    background-color: #1B9FB8; }
+nav a:hover {
+    background-color: #55BDC9; }
+nav li {
+    line-height: 0px; }
+nav li a span:hover {
+    cursor: pointer; }
+nav li.current-menu-item a {
+    line-height: 290%;
+    background: url('./images/nav-gradient.png') #55BDC9; }
+nav li.profile a > span {
+    background: url('./images/profile-icon.png') no-repeat 9px 8px transparent; }
+nav li.profile.current-menu-item a > span {
+    background: url('./images/profile-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.resume a > span {
+    background: url('./images/resume-icon.png') no-repeat 9px 8px transparent; }
+nav li.resume.current-menu-item a > span {
+    background: url('./images/resume-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.portfolio a > span {
+    background: url('./images/portfolio-icon.png') no-repeat 9px 8px transparent; }
+nav li.portfolio.current-menu-item a > span {
+    background: url('./images/portfolio-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.blog a > span {
+    background: url('./images/blog-icon.png') no-repeat 9px 8px transparent; }
+nav li.blog.current-menu-item a > span {
+    background: url('./images/blog-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.contact a > span {
+    background: url('./images/contact-icon.png') no-repeat 9px 8px transparent; }
+nav li.contact.current-menu-item a > span {
+    background: url('./images/contact-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.clients a > span {
+    background: url('./images/clients-icon.png') no-repeat 9px 8px transparent; }
+nav li.clients.current-menu-item a > span {
+    background: url('./images/clients-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.ourteam a > span {
+    background: url('./images/ourteam-icon.png') no-repeat 9px 8px transparent; }
+nav li.ourteam.current-menu-item a > span {
+    background: url('./images/ourteam-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.services a > span {
+    background: url('./images/services-icon.png') no-repeat 9px 8px transparent; }
+nav li.services.current-menu-item a > span {
+    background: url('./images/services-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.testimonials a > span {
+    background: url('./images/testimonials-icon.png') no-repeat 9px 8px transparent; }
+nav li.testimonials.current-menu-item a > span {
+    background: url('./images/testimonials-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.links a > span {
+    background: url('./images/links-icon.png') no-repeat 9px 8px transparent; }
+nav li.links.current-menu-item a > span {
+    background: url('./images/links-active-icon.png') no-repeat 12px 10px transparent; }
+
+/* #Head info
+================================================== */
+.head {
+    color: #666666;
+    line-height: 90%; }
+.head .name {
+    font-family: 'Helvetica Neue', 'HelveticaNeue', 'helvetica' , 'Arial' , sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px; }
+.head .title {
+    color: #999999;
+    font-size: 16px;
+    letter-spacing: -0.5px; }
+
+/* #Profile
+================================================== */
+.profile .sidebar h6 {
+    color: #999999; }
+
+/* #Subnavigation */
+.subnavContainer {
+    font-size: 13px;
+    color: #999999; }
+.subnavContainer div div {
+    text-align: center; }
+.subnavContainer div div a {
+    text-decoration: none;
+    color: #999999; }
+.subnavResume .invert {
+    background: url('./images/invert-resume.png') no-repeat 0px 0px #cccccc; }
+.subnavResume:hover .invert {
+    background: url('./images/invert-resume.png') no-repeat 0px 0px #55BDC9; }
+.subnavResume:hover a {
+    color: #1B9FB8; }
+.subnavPortfolio .invert {
+    background: url('./images/invert-portfolio.png') no-repeat 0px 0px #cccccc; }
+.subnavPortfolio:hover .invert {
+    background: url('./images/invert-portfolio.png') no-repeat 0px 0px #55BDC9; }
+.subnavPortfolio:hover a {
+    color: #1B9FB8; }
+.subnavBlog .invert {
+    background: url('./images/invert-blog.png') no-repeat 0px 0px #cccccc; }
+.subnavBlog:hover .invert {
+    background: url('./images/invert-blog.png') no-repeat 0px 0px #55BDC9; }
+.subnavBlog:hover a {
+    color: #1B9FB8; }
+.subnavContact .invert {
+    background: url('./images/invert-contact.png') no-repeat 0px 0px #cccccc; }
+.subnavContact:hover .invert {
+    background: url('./images/invert-contact.png') no-repeat 0px 0px #55BDC9; }
+.subnavContact:hover a {
+    color: #1B9FB8; }
+.subnavServices .invert {
+    background: url('./images/invert-services.png') no-repeat 0px 0px #cccccc; }
+.subnavServices:hover .invert {
+    background: url('./images/invert-services.png') no-repeat 0px 0px #55BDC9; }
+.subnavServices:hover a {
+    color: #1B9FB8; }
+.subnavClients .invert {
+    background: url('./images/invert-clients.png') no-repeat 0px 0px #cccccc; }
+.subnavClients:hover .invert {
+    background: url('./images/invert-clients.png') no-repeat 0px 0px #55BDC9; }
+.subnavClients:hover a {
+    color: #1B9FB8; }
+.subnavLinks .invert {
+    background: url('./images/invert-links.png') no-repeat 0px 0px #cccccc; }
+.subnavLinks:hover .invert {
+    background: url('./images/invert-links.png') no-repeat 0px 0px #55BDC9; }
+.subnavLinks:hover a {
+    color: #1B9FB8; }
+.subnavOurteam .invert {
+    background: url('./images/invert-ourteam.png') no-repeat 0px 0px #cccccc; }
+.subnavOurteam:hover .invert {
+    background: url('./images/invert-ourteam.png') no-repeat 0px 0px #55BDC9; }
+.subnavOurteam:hover a {
+    color: #1B9FB8; }
+.subnavTestimonials .invert {
+    background: url('./images/invert-testimonials.png') no-repeat 0px 0px #cccccc; }
+.subnavTestimonials:hover .invert {
+    background: url('./images/invert-testimonials.png') no-repeat 0px 0px #55BDC9; }
+.subnavTestimonials:hover a {
+    color: #1B9FB8; }
+
+/* #Sidebar */
+.sidebar {
+    text-align: right;
+    font-size: 12px;
+    color: #999999;
+    line-height: 150%;
+    background: url('./images/shadow-profile-sidebar.jpg') no-repeat 0px 0px; }
+.blog .sidebar {
+    background: none; }
+.blog .sidebar a {
+    color: #1A9FB8;
+    text-decoration: none; }
+.blog .sidebar a:hover {
+    text-decoration: underline; }
+.blog .sidebar ul li:first-child {
+    margin-top: 10px; }
+.blog .sidebar ul li {
+    margin-bottom: 5px; }
+.blog .sidebar .twitter-updates a {
+    color: #cccccc; }
+.blog .sidebar .twitter-updates a:hover {
+    color: #999999; }
+.profile .sidebar address {
+    font-style: normal; }
+.blog .sidebar .twitter-updates li {
+    margin-bottom: 10px; }
+.twitter-updates li {
+    line-height: 130% }
+.twitter-updates a {
+    color: #cccccc;
+    font-size: 11px;
+    text-decoration: none; }
+.twitter-updates a:hover {
+    color: #999999;
+    text-decoration: underline; }
+
+/* #Resume
+================================================== */
+.personalDev {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 40px;}
+.personalDev li {
+    border-top: 1px solid #e5e5e5; }
+.personalDev .title {
+    font-weight: bold; }
+.skills {
+    font-size: 13px;
+    color: #999999; }
+.skills li {
+    border-top: 1px solid #e5e5e5; }
+.skills .skill {
+    font-weight: bold;
+    font-size: 14px; }
+.skills .rating span.filled {
+    background: url('./images/skill-rating.png') no-repeat 0px 0px #1B9FB8; }
+.skills .rating span.empty {
+    background: url('./images/skill-rating.png') no-repeat 0px 0px #cccccc; }
+
+/* #Portfolio
+================================================== */
+.portfolio-items .filter li a {
+    font-size: 11px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 260%;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #666666; }
+.portfolio-items .filter li a:hover {
+    background-color: #1B9FB8; }
+.portfolio-items .filter li.active a {
+    background-color: #1B9FB8; }
+.portfolio-items .items li a:hover {
+    text-decoration: none; }
+.portfolio-items .items li .title {
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold; }
+.portfolio-items .items li .title a {
+	color:inherit;
+	text-decoration:none; }
+.portfolio-items .items li .desc {
+    color: #999999;
+    font-size: 12px; }
+.portfolio-items .items .image a:hover .image-wrapper .cover {
+    background: url('../images/portfolio/hover-image.png') 0px 0px transparent; }
+.portfolio-items .items .video a:hover .image-wrapper .cover {
+    background: url('../images/portfolio/hover-video.png') 0px 0px transparent; }
+
+/* #Blog
+================================================== */
+.blog h1 {
+    line-height: 100%; }
+.blog header h1 a, .blog h2 a, .blog header h1, .blog header h2 {
+    font-size: 21px;
+    color: #666666;
+    text-decoration: none; }
+.blog h1 a:hover, .blog h2 a:hover {
+    text-decoration: underline; }
+.blog .meta, .blog .meta a {
+    font-size: 12px;
+    color: #999999; }
+.blog .meta img {
+    width: auto;
+    margin-right: 4px;
+    margin-bottom: -3px; }
+.more-link {
+    color: #666666; }
+.blog .comment .children {
+	margin:4px 0 5px 30px;
+	font-size:90%;
+}
+.blog .commentContent p {
+    font-size: 12px;
+    color: #999999;
+    line-height: 150%; }
+.blog .comments h6 {
+    border-bottom: 1px solid #cccccc; }
+.blog .comments .name {
+    margin-top: 3px;
+    display: inline-block; }
+.blog .comments .date {
+    font-size: 11px;
+    color: #999999; }
+.blog .comments p {
+    margin-bottom: 10px; }
+.blog .comments .comment-reply-link {
+    font-size: 12px;
+    text-decoration: underline; }
+.blog .commentsList .commentMetaTop {
+    padding: 10px;
+    background-color: #f5f5f5; }
+.blog .commentChild .comment .commentBody {
+    background-color: #fff; }
+.blog .pagination a {
+    padding-bottom: 30px;
+    color: #1A9FB8; }
+#cancel-comment-reply-link {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* Comments */
+.comments ol.commentsList {
+    list-style: none;
+    border-bottom: 1px solid #cccccc; }
+
+
+/* #Footer
+================================================== */
+footer {
+    font-size: 11px;
+    color: #888888; }
