@@ -10,9 +10,9 @@ var SocialNetworkBar = React.createClass({
     render: function () {
 
         var links = this.state.social.map(
-            function(t) {
+            function(t, i) {
                 var image = "./social_icons/" + t.name + ".png";
-                return <a href={t.link} target="_blank"><img src={image} alt={t.name} /></a>
+                return <a href={t.link} key={i} target="_blank"><img src={image} alt={t.name} /></a>
             }
         );
         var mailto = "mailto:" + this.state.mail;
