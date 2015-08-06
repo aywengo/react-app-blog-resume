@@ -5,9 +5,11 @@ var InfoBlock = require('./InfoBlock.jsx');
 var Footer = require('./Footer.jsx');
 var Router = require('react-router');
 var Route = Router.Route;
+var DefaultRoute = Router.DefaultRoute;
 
 var routes = (
     <Route handler={App}>
+        <DefaultRoute handler={InfoBlock}/>
         <Route name="info" handler={InfoBlock}/>
         <Route name="education" handler={Footer}/>
         <Route name="resume" handler={InfoBlock}/>

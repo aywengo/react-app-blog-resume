@@ -9,17 +9,23 @@ var Head = require('./Head.jsx');
 var Footer = require('./Footer.jsx');
 var NavBar = require('./NavBar.jsx');
 var SiteHeader = require('./Header.jsx');
-
-var RouteHandler = require('react-router').RouteHandler;
+var Router = require('react-router');
+var RouteHandler = Router.RouteHandler;
 
 var App = React.createClass({
     componentDidMount: function () {
         document.title = blog.title;
     },
+    getInitialState: function() {
+        return {
+            //currentpath: Router.State.getPath()
+        }
+    },
     render: function () {
         return (
             <div className="profile">
                 <div className="wrapper">
+
                     <NavBar />
                     <div className="content">
                         <div className="info">
@@ -28,6 +34,7 @@ var App = React.createClass({
                                   name={blog.name}
                                   surname={blog.surname}/>
                             <br className="clear"/>
+                            {this.state.currentpath}
                             <RouteHandler />
                         </div>
                         <div className="sidebar hidden">
