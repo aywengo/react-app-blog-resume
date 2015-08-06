@@ -3,6 +3,7 @@ var SiteHeader = require('./../app/Header.jsx');
 var InfoBlock = require('./../app/InfoBlock.jsx');
 var AddressBlock = require('./../app/AddressBlock.jsx');
 var Footer = require('./../app/Footer.jsx');
+var Head = require('./../app/Head.jsx');
 var NavBar = require('./../app/NavBar.jsx');
 var SocialNetworkBar = require('./../app/SocialNetworkBar.jsx');
 var WidgetTwitter = require('./../app/WidgetTwitter.jsx');
@@ -52,6 +53,14 @@ describe("NavBar", function () {
     it("should be wrapped with a div", function () {
         var app = TestUtils.renderIntoDocument(<NavBar />);
         expect(app.getDOMNode().tagName).toEqual('NAV');
+    });
+});
+
+describe("Head", function () {
+
+    it("should be wrapped with a div", function () {
+        var app = TestUtils.renderIntoDocument(<Head />);
+        expect(app.getDOMNode().tagName).toEqual('DIV');
     });
 });
 

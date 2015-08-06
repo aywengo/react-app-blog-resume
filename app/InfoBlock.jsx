@@ -1,51 +1,41 @@
 var React = require('react');
+var Head = require('./Head.jsx');
+var blog = require('./blog.js');
+var Link = require('react-router').Link;
 
 var InfoBlock = React.createClass({
-    getInitialState: function(){
+    getInitialState: function () {
         return {
-            logo: this.props.logo,
-            name: this.props.name,
-            surname: this.props.surname,
-            position: this.props.position,
-            text: this.props.text
+            text: blog.text
         }
     },
     render: function () {
-        return <div className="info">
-            <div className="head">
-                <img src={this.state.logo} alt={this.state.name} />
-                <div className="name">
-                    <p className="first">{this.state.name}</p>
-                    <p className="last">{this.state.surname}</p>
-                    <p className="title">{this.state.position}</p>
+        return  <div id="dynamic">
+                <div className="desc">
+                    <p>{this.state.text}</p>
                 </div>
-            </div>
-            <br className="clear" />
-            <div className="desc">
-                <p>{this.state.text}</p>
-            </div>
-            <div className="subnavContainer">
-                <div className="subnavLeft">
-                    <div className="subnavResume">
-                        <a href="" className="invert"></a><br />
-                        <a href="">Resume</a>
+                <div className="subnavContainer">
+                    <div className="subnavLeft">
+                        <div className="subnavResume">
+                            <Link to="resume" className="invert" /><br />
+                            <Link to="resume">Resume</Link>
+                        </div>
+                        <div className="subnavPortfolio">
+                            <Link to="education" className="invert" /><br />
+                            <Link to="education">Education</Link>
+                        </div>
                     </div>
-                    <div className="subnavPortfolio">
-                        <a href="" className="invert"></a><br />
-                        <a href="" >Education</a>
-                    </div>
-                </div>
-                <div className="subnavRight">
-                    <div className="subnavBlog">
-                        <a href="" className="invert"></a><br />
-                        <a href="" >Blog</a>
-                    </div>
-                    <div className="subnavContact">
-                        <a href="" className="invert"></a><br />
-                        <a href="" >Contact</a>
+                    <div className="subnavRight">
+                        <div className="subnavBlog">
+                            <Link to="blog" className="invert" /><br />
+                            <Link to="blog">Blog</Link>
+                        </div>
+                        <div className="subnavContact">
+                            <Link to="contact" className="invert" /><br />
+                            <Link to="contact">Contact</Link>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>;
     }
 });

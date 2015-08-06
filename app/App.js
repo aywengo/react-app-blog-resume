@@ -5,9 +5,12 @@ var SocialNetworks = require('./SocialNetworkBar.jsx');
 var WidgetTwitter = require('./WidgetTwitter.jsx');
 var AddressBlock = require('./AddressBlock.jsx');
 var InfoBlock = require('./InfoBlock.jsx');
+var Head = require('./Head.jsx');
 var Footer = require('./Footer.jsx');
 var NavBar = require('./NavBar.jsx');
 var SiteHeader = require('./Header.jsx');
+
+var RouteHandler = require('react-router').RouteHandler;
 
 var App = React.createClass({
     componentDidMount: function () {
@@ -19,11 +22,14 @@ var App = React.createClass({
                 <div className="wrapper">
                     <NavBar />
                     <div className="content">
-                        <InfoBlock logo={blog.logo}
-                                   position={blog.position}
-                                   name={blog.name}
-                                   surname={blog.surname}
-                                   text={blog.text} />
+                        <div className="info">
+                            <Head logo={blog.logo}
+                                  position={blog.position}
+                                  name={blog.name}
+                                  surname={blog.surname}/>
+                            <br className="clear"/>
+                            <RouteHandler />
+                        </div>
                         <div className="sidebar hidden">
                             <AddressBlock address={blog.address}
                                           mail={blog.mail}
