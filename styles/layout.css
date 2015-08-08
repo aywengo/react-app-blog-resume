@@ -12,7 +12,7 @@ nav li.current-menu-item a                         { width: 120px; height: 40px;
 nav li.current-menu-item a span span               { visibility: visible; }
 nav li.profile.current-menu-item a > span          { padding-left: 39px; }
 nav li.resume.current-menu-item a > span           { padding-left: 38px; }
-nav li.portfolio.current-menu-item a > span        { padding-left: 38px; }
+nav li.education.current-menu-item a > span        { padding-left: 38px; }
 nav li.blog.current-menu-item a > span             { padding-left: 38px; }
 nav li.contact.current-menu-item a > span          { padding-left: 38px; }
 nav li.clients.current-menu-item a > span          { padding-left: 38px; }
@@ -60,20 +60,20 @@ footer                                  { clear: both; margin-left: 40px; paddin
 .skills .rating span                    { display: inline-block; width: 10px; height: 10px; margin-right: 3px }
 .skills .description                    { display: inline-block; margin-left: 10px; }
 
-/* Portfolio  */
-.portfolio-items .filter				{ margin:40px 0 10px 0;}
-.portfolio-items .filter li             { float: left; margin: 0 10px 10px 0; }
-.portfolio-items .filter li a           { padding-left: 7px; padding-right: 7px; height: 30px; display: block; }
-.portfolio-items .items li              { margin-right: 20px; margin-bottom: 20px; width: 210px; float: left; }
-.portfolio-items .items li.item-hidden	{ display: none; }
-.portfolio-items .items li .title       { display: block; }
-.portfolio-items .items li .desc        { min-height: 0px; margin: 0px; }
-.portfolio-items .items li img          { width: 210px; }
-.portfolio-items .items .image-wrapper  { position: relative; }
-.portfolio-items .items .image .image-wrapper .cover { display: none; }
-.portfolio-items .items .video .image-wrapper .cover { display: none; }
-.portfolio-items .items .image:hover .image-wrapper .cover { width: 210px; height: 160px; display: block; position: absolute; left: 0px; }
-.portfolio-items .items .video:hover .image-wrapper .cover { width: 210px; height: 160px; display: block; position: absolute; left: 0px; }
+/* education  */
+.education-items .filter				{ margin:40px 0 10px 0;}
+.education-items .filter li             { float: left; margin: 0 10px 10px 0; }
+.education-items .filter li a           { padding-left: 7px; padding-right: 7px; height: 30px; display: block; }
+.education-items .items li              { margin-right: 20px; margin-bottom: 20px; width: 210px; float: left; }
+.education-items .items li.item-hidden	{ display: none; }
+.education-items .items li .title       { display: block; }
+.education-items .items li .desc        { min-height: 0px; margin: 0px; }
+.education-items .items li img          { width: 210px; }
+.education-items .items .image-wrapper  { position: relative; }
+.education-items .items .image .image-wrapper .cover { display: none; }
+.education-items .items .video .image-wrapper .cover { display: none; }
+.education-items .items .image:hover .image-wrapper .cover { width: 210px; height: 160px; display: block; position: absolute; left: 0px; }
+.education-items .items .video:hover .image-wrapper .cover { width: 210px; height: 160px; display: block; position: absolute; left: 0px; }
 
 /* Contact */
 .contact iframe                         { width: 690px; height: 285px; }
@@ -145,7 +145,7 @@ footer                                  { width: 820px; padding-bottom: 30px; }
         .subnavContainer div div                { margin-right: 39px; }
         .profile .sidebar address               { margin-top: 30px; }
 
-        /* Portfolio  */
+        /* education  */
 
         /* Contact */
         .contact iframe                         { width: 570px; height: 225px; }

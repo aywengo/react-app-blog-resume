@@ -39,10 +39,10 @@ nav li.resume a > span {
     background: url('./images/resume-icon.png') no-repeat 9px 8px transparent; }
 nav li.resume.current-menu-item a > span {
     background: url('./images/resume-active-icon.png') no-repeat 12px 10px transparent; }
-nav li.portfolio a > span {
-    background: url('./images/portfolio-icon.png') no-repeat 9px 8px transparent; }
-nav li.portfolio.current-menu-item a > span {
-    background: url('./images/portfolio-active-icon.png') no-repeat 12px 10px transparent; }
+nav li.education a > span {
+    background: url('./images/education-icon.png') no-repeat 9px 8px transparent; }
+nav li.education.current-menu-item a > span {
+    background: url('./images/education-active-icon.png') no-repeat 12px 10px transparent; }
 nav li.blog a > span {
     background: url('./images/blog-icon.png') no-repeat 9px 8px transparent; }
 nav li.blog.current-menu-item a > span {
@@ -106,11 +106,11 @@ nav li.links.current-menu-item a > span {
     background: url('./images/invert-resume.png') no-repeat 0px 0px #55BDC9; }
 .subnavResume:hover a {
     color: #1B9FB8; }
-.subnavPortfolio .invert {
-    background: url('./images/invert-portfolio.png') no-repeat 0px 0px #cccccc; }
-.subnavPortfolio:hover .invert {
-    background: url('./images/invert-portfolio.png') no-repeat 0px 0px #55BDC9; }
-.subnavPortfolio:hover a {
+.subnaveducation .invert {
+    background: url('./images/invert-education.png') no-repeat 0px 0px #cccccc; }
+.subnaveducation:hover .invert {
+    background: url('./images/invert-education.png') no-repeat 0px 0px #55BDC9; }
+.subnaveducation:hover a {
     color: #1B9FB8; }
 .subnavBlog .invert {
     background: url('./images/invert-blog.png') no-repeat 0px 0px #cccccc; }
@@ -214,9 +214,9 @@ nav li.links.current-menu-item a > span {
 .skills .rating span.empty {
     background: url('./images/skill-rating.png') no-repeat 0px 0px #cccccc; }
 
-/* #Portfolio
+/* #education
 ================================================== */
-.portfolio-items .filter li a {
+.education-items .filter li a {
     font-size: 11px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -225,26 +225,26 @@ nav li.links.current-menu-item a > span {
     color: #ffffff;
     text-decoration: none;
     background-color: #666666; }
-.portfolio-items .filter li a:hover {
+.education-items .filter li a:hover {
     background-color: #1B9FB8; }
-.portfolio-items .filter li.active a {
+.education-items .filter li.active a {
     background-color: #1B9FB8; }
-.portfolio-items .items li a:hover {
+.education-items .items li a:hover {
     text-decoration: none; }
-.portfolio-items .items li .title {
+.education-items .items li .title {
     font-size: 12px;
     color: #333333;
     font-weight: bold; }
-.portfolio-items .items li .title a {
+.education-items .items li .title a {
 	color:inherit;
 	text-decoration:none; }
-.portfolio-items .items li .desc {
+.education-items .items li .desc {
     color: #999999;
     font-size: 12px; }
-.portfolio-items .items .image a:hover .image-wrapper .cover {
-    background: url('../images/portfolio/hover-image.png') 0px 0px transparent; }
-.portfolio-items .items .video a:hover .image-wrapper .cover {
-    background: url('../images/portfolio/hover-video.png') 0px 0px transparent; }
+.education-items .items .image a:hover .image-wrapper .cover {
+    background: url('../images/education/hover-image.png') 0px 0px transparent; }
+.education-items .items .video a:hover .image-wrapper .cover {
+    background: url('../images/education/hover-video.png') 0px 0px transparent; }
 
 /* #Blog
 ================================================== */
