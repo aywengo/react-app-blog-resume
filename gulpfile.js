@@ -209,7 +209,7 @@ gulp.task('deploy', function () {
   });
 
   assetsTask({
-    development: true,
+    development: false,
     src: './assets/**/*.*',
     dest: './dist'
   });
