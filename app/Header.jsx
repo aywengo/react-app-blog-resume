@@ -1,14 +1,14 @@
 var React = require('react');
-var blog = require('./blog.js');
+var Model = require('./model.js');
 var SocialNetworks = require('./SocialNetworkBar.jsx');
 
 var SiteHeader = React.createClass({
     getInitialState: function () {
         return {
-            title: blog.title,
-            logo: blog.logo,
-            mail: blog.mail,
-            social: blog.social
+            title: Model.title,
+            logo: Model.logo,
+            mail: Model.mail,
+            social: Model.social
         }
     },
     render: function () {

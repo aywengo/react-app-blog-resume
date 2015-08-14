@@ -13,7 +13,7 @@ var SocialNetworkBar = require('./../app/SocialNetworkBar.jsx');
 var WidgetTwitter = require('./../app/WidgetTwitter.jsx');
 var stubRouterContext = require('./stubRouterContext.js');
 var React = require('react/addons');
-var blog = require('./../app/blog.js');
+var blog = require('./../app/model.js');
 var TestUtils = React.addons.TestUtils;
 var fs = require('fs');
 var globaldocument = require('global');
@@ -26,7 +26,7 @@ describe("App", function () {
         app = TestUtils.renderIntoDocument(<Subject/>);
     });
 
-    it("should render header: from blog.js title prop", function () {
+    it("should render header: from model.js title prop", function () {
         expect(global.document.title).toEqual(blog.title);
     });
 

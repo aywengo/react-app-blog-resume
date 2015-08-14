@@ -1,6 +1,6 @@
 var React = require('react');
 var Desc = require('./Desc.jsx');
-var blog = require('./blog.js');
+var Model = require('./model.js');
 
 var Resume = React.createClass({
     render: function() {
@@ -9,7 +9,7 @@ var Resume = React.createClass({
                         <h2>Resume</h2>
                     </div>
                     <div className="resume-items">
-                        {blog.text}
+                        {Model.text}
                     </div>
             </div>
     }

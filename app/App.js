@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react');
-var blog = require('./blog.js');
+var Model = require('./model.js');
 var SocialNetworks = require('./SocialNetworkBar.jsx');
 var WidgetTwitter = require('./WidgetTwitter.jsx');
 var AddressBlock = require('./AddressBlock.jsx');
@@ -17,7 +17,7 @@ var RouteHandler = Router.RouteHandler;
 var App = React.createClass({
     mixins: [Router.State],
     componentDidMount: function () {
-        document.title = blog.title;
+        document.title = Model.title;
     },
     render: function () {
         var twitterBar,infoBlock,mainPart;
@@ -37,25 +37,25 @@ var App = React.createClass({
 
                     <div className="content">
                         <div className="info">
-                            <Head logo={blog.logo}
-                                  position={blog.position}
-                                  name={blog.name}
-                                  surname={blog.surname}/>
+                            <Head logo={Model.logo}
+                                  position={Model.position}
+                                  name={Model.name}
+                                  surname={Model.surname}/>
                             <br className="clear"/>
                             {infoBlock}
                         </div>
                         <div className={(this.isActive('/profile') || this.isActive('/')) ? "sidebar hidden" : "topAddress hidden"}>
-                            <AddressBlock address={blog.address}
-                                          mail={blog.mail}
-                                          telnumber={blog.tel}/>
-                            <SocialNetworks networks={blog.social}
-                                            mail={blog.mail}/>
+                            <AddressBlock address={Model.address}
+                                          mail={Model.mail}
+                                          telnumber={Model.tel}/>
+                            <SocialNetworks networks={Model.social}
+                                            mail={Model.mail}/>
                             {twitterBar}
                         </div>
                         <br className="clear"/>
                         {mainPart}
                     </div>
-                    <Footer author={blog.author}/>
+                    <Footer author={Model.author}/>
                 </div>
             </div>
         );
