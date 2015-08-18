@@ -4,6 +4,7 @@ var SiteHeader = require('./../app/Header.jsx');
 var InfoBlock = require('./../app/InfoBlock.jsx');
 var AddressBlock = require('./../app/AddressBlock.jsx');
 var Contact = require('./../app/Contact.jsx');
+var ContactForm = require('./../app/ContactForm.jsx');
 var Education = require('./../app/Education.jsx');
 var EducationItems = require('./../app/EducationItems.jsx');
 var Footer = require('./../app/Footer.jsx');
@@ -97,6 +98,14 @@ describe("Contact", function () {
     it("should be wrapped with a div", function () {
         var app = TestUtils.renderIntoDocument(<Contact/>);
         expect(app.getDOMNode().tagName).toEqual('DIV');
+    });
+});
+
+describe("ContactForm", function () {
+
+    it("should be wrapped with a form", function () {
+        var app = TestUtils.renderIntoDocument(<ContactForm/>);
+        expect(app.getDOMNode().tagName).toEqual('FORM');
     });
 });
 

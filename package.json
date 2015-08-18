@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react-router": "^0.13.3",
+    "request": "^2.60.0",
+    "revalidator": "^0.3.1"
   }
 }

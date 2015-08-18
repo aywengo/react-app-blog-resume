@@ -1,15 +1,16 @@
 var DbModel = {
-    "title": "Hello my awesome world!",
+    "title": "Roman Melnyk personal blog",
     "author": "Roman Melnyk",
     "name": "Roman",
     "surname": "Melnyk",
     "position": "Software developer",
     "logo": "https://media.licdn.com/media/p/3/005/031/265/0a61343.jpg",
+    "service": "http://localhost:8088/api",
     "social": [
-        {name: "facebook", link: ""},
-        {name: "twitter", link: ""},
-        {name: "github", link: ""},
-        {name: "linkedin", link: ""}],
+        {name: "facebook", link: "http://fb.com/aywengo"},
+        {name: "twitter", link: "https://twitter.com/aywengo"},
+        {name: "github", link: "https://github.com/aywengo"},
+        {name: "linkedin", link: "https://pl.linkedin.com/in/aywengo"}],
     "education" : [
         {title: "CCNA course", time: "Aug 2008 - Dec 2008", authority: "Cisco Network Academia, Ukraine, Vinnytsia"},
         {title: "Expert diploma", time: "Sep 2006 - Apr 2008", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"},

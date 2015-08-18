@@ -81,7 +81,7 @@ footer                                  { clear: both; margin-left: 40px; paddin
 .contact form                           { float: left; width: 420px; }
 .contact form .error					{ display: none; }
 .contact textarea                       { width: 100%; height: 120px; }
-.contact input[type="submit"]           { float: right; margin-top: -20px; margin-right: -10px; }
+.contact button[type="submit"]           { float: right; margin-top: -20px; margin-right: -10px; }
 .contact .sidebar                       { float: right; margin-right: 0px; margin-top: -40px; }
 .contact .social h6                     { margin-bottom: 10px; }
 
@@ -107,7 +107,7 @@ footer                                  { clear: both; margin-left: 40px; paddin
 .blog .children .comment            { padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; }
 .blog .comments form                    { margin-top: 10px; }
 .blog .comments form textarea           { width: 470px; height: 200px; }
-.blog .comments form input.submit       { float: right; }
+.blog .comments form button.submit       { float: right; }
 
 /* Footer */
 footer                                  { width: 820px; padding-bottom: 30px; }
@@ -235,7 +235,7 @@ footer                                  { width: 820px; padding-bottom: 30px; }
         .main                                   { width: 210px; }
         .post .main                             { width: 210px; }
         .blog .comments form                    { width: 200px; }
-        .blog .comments form input.submit       { float: right; margin-right: -10px; }
+        .blog .comments form button.submit       { float: right; margin-right: -10px; }
 
         /* Hide some elements */
         .hidden                                 { display: none; }
