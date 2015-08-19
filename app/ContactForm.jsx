@@ -2,6 +2,7 @@
 var React = require('react');
 var Model = require('./model.js');
 var Revalidator = require('revalidator');
+var ValidationInfoBlock = require('./ValidationInfoBlock.jsx');
 
 var getValidationSchema = function () {
     return {
@@ -28,9 +29,10 @@ var getValidationSchema = function () {
 
 var ContactForm = React.createClass({
     getInitialState: function () {
-        return {infomsg: ''}
+        return {infomsg: '',
+                isValid: null}
     },
-    handleSubmit: function () {
+    handleSubmit: function (e) {
         var subject = {
             name: this.refs.uname.getDOMNode().value.toString(),
             email: this.refs.uemail.getDOMNode().value.toString(),
@@ -39,9 +41,11 @@ var ContactForm = React.createClass({
         var isValid = Revalidator.validate(subject, getValidationSchema());
 
         if (!isValid.valid){
-            console.log(isValid.errors);
+            this.setState({infomsg : isValid.errors, isValid: false});
             return;
         }
+
+        e.preventDefault();
 
         var jso = JSON.stringify(subject);
         $.ajax({
@@ -51,18 +55,19 @@ var ContactForm = React.createClass({
             type: 'POST',
             data: jso,
             success: function (body) {
-                this.setState({infomsg: body})
+                this.setState({infomsg: body, isValid: true})
             }.bind(this),
             error: function (error) {
-                this.setState({infomsg: error.responseType})
+                this.setState({infomsg: error.responseType, isValid: false})
             }.bind(this)
         });
     },
     render: function () {
-        var submitted = <div className="alert-box success"><span>{this.state.infomsg}</span></div>
 
         return <form className="fc-contact-form" ref="contactForm">
-            {submitted}
+            <ValidationInfoBlock
+                infomsg={this.state.infomsg}
+                isValid={this.state.isValid}/>
             <label htmlFor="uname">Your name</label>
             <input type="text" ref="uname" id="uname" required/>
 
