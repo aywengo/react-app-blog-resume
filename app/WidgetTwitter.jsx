@@ -7,7 +7,8 @@ var WidgetTwitter = React.createClass({
         return {data: []};
     },
     componentDidMount: function () {
-        Request.get(Model.service + "/getTweets", function (error, response, body) {
+        var count = this.props.count == undefined ? 3 : this.props.count;
+        Request.get(Model.service + "/getTweets/" + count, function (error, response, body) {
             if (!error && response.statusCode == 200 && !body.isEmpty) {
                 var data = JSON.parse(body);
                 if (!data.isNullOrUndefined) {

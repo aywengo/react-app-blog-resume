@@ -33,6 +33,8 @@ var ContactForm = React.createClass({
                 isValid: null}
     },
     handleSubmit: function (e) {
+        e.preventDefault();
+
         var subject = {
             name: this.refs.uname.getDOMNode().value.toString(),
             email: this.refs.uemail.getDOMNode().value.toString(),
@@ -44,8 +46,6 @@ var ContactForm = React.createClass({
             this.setState({infomsg : isValid.errors, isValid: false});
             return;
         }
-
-        e.preventDefault();
 
         var jso = JSON.stringify(subject);
         $.ajax({

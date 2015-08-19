@@ -23,7 +23,7 @@ var App = React.createClass({
         var twitterBar,infoBlock,mainPart;
         if(this.isActive('/profile') || this.isActive('/'))
         {
-            twitterBar = <WidgetTwitter />;
+            twitterBar = <WidgetTwitter count={5} />;
             infoBlock = <InfoBlock />;
         }
         else
