@@ -5,17 +5,17 @@ var DbModel = {
     "surname": "Melnyk",
     "position": "Software developer",
     "logo": "https://media.licdn.com/media/p/3/005/031/265/0a61343.jpg",
-    "service": "http://localhost:8088/api",
+    "service": "http://melnyk.co:9098/api",
     "social": [
         {name: "facebook", link: "http://fb.com/aywengo"},
         {name: "twitter", link: "https://twitter.com/aywengo"},
         {name: "github", link: "https://github.com/aywengo"},
         {name: "linkedin", link: "https://pl.linkedin.com/in/aywengo"}],
     "education" : [
-        {title: "CCNA course", time: "Aug 2008 - Dec 2008", authority: "Cisco Network Academia, Ukraine, Vinnytsia"},
-        {title: "Expert diploma", time: "Sep 2006 - Apr 2008", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"},
-        {title: "Master degree", time: "Sep 2006 - June 2007", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"},
-        {title: "Bachelors degree", time: "Oct 2001 - June 2006", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"}],
+        {title: "CCNA Exploration, Network Fundamentals; Routing Protocols and Concepts; LAN Switching and Wireless;", time: "Aug 2008 - Apr 2009", authority: "Cisco Network Academia, Ukraine, Vinnytsia"},
+        {title: "Expert diploma - Computer systems and networks", time: "Sep 2006 - Apr 2008", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"},
+        {title: "Master degree - Electrotechnics", time: "Sep 2006 - June 2007", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"},
+        {title: "Bachelors degree - Electrotechnics", time: "Oct 2001 - June 2006", authority: "Vinnytsia National Technical University, Ukraine, Vinnytsia"}],
     "certification" : [
         {title: "Principles of Reactive Programming", time: "May 2015", authority: "Coursera Verified Certificates. License: UVFCKVQNVQ",
             link: "https://www.coursera.org/account/accomplishments/verify/UVFCKVQNVQ"},

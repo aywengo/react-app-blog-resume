@@ -15,7 +15,9 @@ var EducationItems = React.createClass({
             <div className="education-items">
                 <ul className="personalDev">
                     {this.state.items.map(function(data, i) {
-                        var head = (data.link === 'undefined') ? data.title : <a href={data.link} target="_blank"> {data.title} </a>;
+                        var head = (data.link === 'undefined')
+                                        ? data.title
+                                        : <a href={data.link} target="_blank"> {data.title} </a>;
                         return (<li key={i}>
                                 <span className="title">{head}</span>
                                 <span className="time">{data.time}</span><br/>
