@@ -33,7 +33,7 @@ var DbModel = {
             link: "http://www.brainbench.com/ordercert/downloadCertificate.do?pin=ngVH3VTp3C0*"}
     ],
     "mail": "roman@melnyk.co",
-    "tel": "+48 123 456 789",
+    "tel": "",
     "address": 'Miel\u017cy\u0144skiego 14, 61-725 Pozna\u0144',
     "map" : 'https://maps.google.com/maps?q=Poznan&hl=en&sll=52.4075257,16.9333802&sspn=3.902347,7.13562&t=h&hnear=Poznan,+Poland&z=14&output=embed',
     "text": "As far as I remember myself I was fond of math, programming and foreign languages. My first program I wrote on assembler when was eight years old and my first program as a freelancer in 19.\r\n" +
