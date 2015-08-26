@@ -32,7 +32,7 @@ var DbModel = {
         {title: "Brainbench: С# 4.0 Master", time: "Nov 2012 - Nov 2015", authority: "Brainbench. Transcript ID#: 9645519",
             link: "http://www.brainbench.com/ordercert/downloadCertificate.do?pin=ngVH3VTp3C0*"}
     ],
-    "mail": "aywengo@gmail.com",
+    "mail": "roman@melnyk.co",
     "tel": "+48 123 456 789",
     "address": 'Miel\u017cy\u0144skiego 14, 61-725 Pozna\u0144',
     "map" : 'https://maps.google.com/maps?q=Poznan&hl=en&sll=52.4075257,16.9333802&sspn=3.902347,7.13562&t=h&hnear=Poznan,+Poland&z=14&output=embed',
