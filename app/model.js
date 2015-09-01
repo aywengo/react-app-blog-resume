@@ -5,7 +5,7 @@ var DbModel = {
     "surname": "Melnyk",
     "position": "Software developer",
     "logo": "https://media.licdn.com/media/p/3/005/031/265/0a61343.jpg",
-    "service": "http://localhost:8088/api",
+    "service": "http://melnyk.co:9098/api",
     "profile" : "I am a hands-on, highly competent software engineer with 12 years’ experience designing, programming and testing software across a variety of platforms.I have worked on numerous projects from concept to completion. A specialist in C# and .NET, I take pride in coding to consistently high standards and regularly refresh my skills to ensure I keep up with ongoing developments.",
     "social": [
         {name: "facebook", link: "http://fb.com/aywengo"},
