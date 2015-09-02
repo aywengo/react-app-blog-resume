@@ -58,7 +58,7 @@ var DbModel = {
     "mail": "roman@melnyk.co",
     "tel": "",
     "address": 'Miel\u017cy\u0144skiego 14, 61-725 Pozna\u0144',
-    "map" : 'https://maps.google.com/maps?q=Poznan&hl=en&sll=52.4075257,16.9333802&sspn=3.902347,7.13562&t=h&hnear=Poznan,+Poland&z=14&output=embed',
+    "map" : 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155797.70828953368!2d16.901665799999993!3d52.40052855000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2zUG96bmHFhCwgUG9sYW5k!5e0!3m2!1sen!2sus!4v1441220344341',
     "text": "As far as I remember myself I was fond of math, programming and foreign languages. My first program I wrote on assembler when was eight years old and my first program as a freelancer in 19.\r\n" +
     "I\'ve got honor Master degree in electrotechnical engineering and expert Diploma of Computer Systems and Networks.  During last 12 years of my life, I\'ve been professionally coding on Pascal, Delphi, PHP, C++, C#. Now I am trying my skills with Scala and JavaScript. Hope I\'ll switch shortly to this new fast growing stream."
 };
