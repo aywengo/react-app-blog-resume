@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "react": "^0.13.3",
+    "react-ga": "^1.1.0",
     "react-router": "^0.13.3",
     "request": "^2.60.0",
     "revalidator": "^0.3.1"

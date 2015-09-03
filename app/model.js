@@ -1,6 +1,7 @@
 var DbModel = {
     "title": "Roman Melnyk personal blog",
     "author": "Roman Melnyk",
+    "gaid": "UA-17275263-4",
     "name": "Roman",
     "surname": "Melnyk",
     "position": "Software developer",
