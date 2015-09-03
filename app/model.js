@@ -44,7 +44,7 @@ var DbModel = {
         {position: "Senior engineer- TL/Architect", time: "September 2007 - Jule 2011", employer: "State Inspectorate for the Energy Control in the South-West region of Ukraine",
             link: "", description: "Development of technical solutions to meet the energy company's needs"}
     ],
-    skills : [
+    "skills" : [
         {name : "C#", value: "10", description: ""},
         {name : "JavaScript", value: "6", description: ""},
         {name : ".NET Framework", value: "9", description: ""},

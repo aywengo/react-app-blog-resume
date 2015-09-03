@@ -11,7 +11,7 @@ var DefaultRoute = Router.DefaultRoute;
 var NotFoundRoute = Router.NotFoundRoute;
 
 var routes = (
-    <Route handler={App}>
+    <Route handler={App} path="/">
         <DefaultRoute handler={InfoBlock}/>
         <NotFoundRoute handler={NotFound} />
         <Route name="profile" handler={InfoBlock}/>

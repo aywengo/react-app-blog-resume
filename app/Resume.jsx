@@ -16,7 +16,7 @@ var Resume = React.createClass({
                 <h5>Experience</h5>
                 <p> <Experience items={Model.experience} /></p>
                 <h5>Skills</h5>
-                <p> <Skills skills={Model.skills} maxScale='10'/> </p>
+                <p> <Skills skills={Model.skills} /> </p>
                 <h5>About myself</h5>
                 <pre>{Model.text}</pre>
             </div>

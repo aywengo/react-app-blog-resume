@@ -6,7 +6,7 @@ var DbModel = require('./model.js');
 var Ga = require('react-ga');
 
 Ga.initialize(DbModel.gaid);
-Router.run(routes, Router.HistoryLocation, function (Handler, state) {
+Router.run(routes, Router.HashLocation, function (Handler, state) {
     Ga.pageview(state.pathname);
     React.render(<Handler/>, document.body);
 });
