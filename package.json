@@ -1,7 +1,7 @@
 {
   "name": "react-app-blog-resume",
-  "version": "2.2.2",
-  "description": "VCard and blog React application boilerplate",
+  "version": "2.14.2",
+  "description": "VCard and blog React application",
   "author": "Roman Melnyk",
   "license": "ISC",
   "devDependencies": {
@@ -26,9 +26,11 @@
     "watchify": "^2.1.1"
   },
   "dependencies": {
+    "mongoose": "^4.1.5",
     "react": "^0.13.3",
     "react-ga": "^1.1.0",
     "react-router": "^0.13.3",
+    "react-spinner": "^0.2.2",
     "request": "^2.60.0",
     "revalidator": "^0.3.1"
   }

@@ -826,6 +826,40 @@ body {
 .social img {
 	margin-left: 5px;
 }
+.react-spinner {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    padding: 3px;
+}
+
+.react-spinner_bar {
+    -webkit-animation: react-spinner_spin 1.2s linear infinite;
+    -moz-animation: react-spinner_spin 1.2s linear infinite;
+    animation: react-spinner_spin 1.2s linear infinite;
+    border-radius: 5px;
+    background-color: darkslategray;
+    position: absolute;
+    width: 20%;
+    height: 7.8%;
+}
+
+@keyframes react-spinner_spin {
+    0% { opacity: 1; }
+    100% { opacity: 0.15; }
+}
+
+@-moz-keyframes react-spinner_spin {
+    0% { opacity: 1; }
+    100% { opacity: 0.15; }
+}
+
+@-webkit-keyframes react-spinner_spin {
+    0% { opacity: 1; }
+    100% { opacity: 0.15; }
+}
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache
