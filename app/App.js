@@ -7,10 +7,8 @@ var AddressBlock = require('./AddressBlock.jsx');
 var InfoBlock = require('./InfoBlock.jsx');
 var SubnavContainer = require('./SubnavContainer.jsx');
 var Head = require('./Head.jsx');
-var Desc = require('./Desc.jsx');
 var Footer = require('./Footer.jsx');
 var NavBar = require('./NavBar.jsx');
-var SiteHeader = require('./Header.jsx');
 var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
 

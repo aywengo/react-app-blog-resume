@@ -1,5 +1,4 @@
 var React = require('react');
-var Desc = require('./Desc.jsx');
 var Model = require('./model.js');
 var Skills = require('./Skills.jsx');
 var Experience = require('./Experience.jsx');
@@ -14,9 +13,9 @@ var Resume = React.createClass({
                 <h5>Professional profile</h5>
                 <p>{Model.profile}</p>
                 <h5>Experience</h5>
-                <p> <Experience items={Model.experience} /></p>
+                <p> <Experience /></p>
                 <h5>Skills</h5>
-                <p> <Skills skills={Model.skills} /> </p>
+                <p> <Skills  /> </p>
                 <h5>About myself</h5>
                 <pre>{Model.text}</pre>
             </div>

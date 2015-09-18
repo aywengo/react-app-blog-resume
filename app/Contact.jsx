@@ -1,5 +1,4 @@
 var React = require('react');
-var Desc = require('./Desc.jsx');
 var Model = require('./model.js');
 var ContactForm = require('./ContactForm.jsx');
 var WidgetTwitter = require('./WidgetTwitter.jsx');

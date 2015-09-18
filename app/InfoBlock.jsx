@@ -1,6 +1,4 @@
 var React = require('react');
-var Head = require('./Head.jsx');
-var Desc = require('./Desc.jsx');
 var SubnavContainer = require('./SubnavContainer.jsx');
 var Model = require('./model.js');
 
