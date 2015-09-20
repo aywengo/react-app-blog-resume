@@ -1,6 +1,5 @@
 var App = require('./../app/App.js');
 var routes = require('./../app/routes.js');
-var SiteHeader = require('./../app/Header.jsx');
 var InfoBlock = require('./../app/InfoBlock.jsx');
 var AddressBlock = require('./../app/AddressBlock.jsx');
 var Contact = require('./../app/Contact.jsx');
@@ -32,14 +31,6 @@ describe("App", function () {
     });
 
     it("should be wrapped with a div", function () {
-        expect(app.getDOMNode().tagName).toEqual('DIV');
-    });
-});
-
-describe("SiteHeader", function () {
-
-    it("should be wrapped with a div", function () {
-        var app = TestUtils.renderIntoDocument(<SiteHeader/>);
         expect(app.getDOMNode().tagName).toEqual('DIV');
     });
 });

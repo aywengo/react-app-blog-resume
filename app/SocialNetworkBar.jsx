@@ -1,11 +1,30 @@
 var React = require('react');
+var Model = require('./model.js');
+var Request = require('request');
+var Spinner = require('react-spinner');
 
+var elementBody;
 var SocialNetworkBar = React.createClass({
     getInitialState: function () {
         return {
-            social: this.props.networks,
+            social: [],
             mail: this.props.mail
         }
+    },
+    componentWillMount: function() {
+        elementBody = <Spinner />
+    },
+    componentDidMount: function () {
+        Request.get(Model.resource + this.props.resource,
+            function (error, response, body) {
+                if (!error && response.statusCode == 200 && !body.isEmpty) {
+                    var data = JSON.parse(body);
+                    if (!data.isNullOrUndefined) {
+                        elementBody = <div />;
+                        this.setState({social: data});
+                    }
+                }
+            }.bind(this))
     },
     render: function () {
 
@@ -20,6 +39,7 @@ var SocialNetworkBar = React.createClass({
         return <div className="social">
             <a href={mailto} target="_blank"><img src="./social_icons/email.png" alt={this.state.mail} /></a>
             {links}
+            {elementBody}
         </div>;
     }
 });

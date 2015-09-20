@@ -9,11 +9,6 @@ var DbModel = {
     "service": "http://melnyk.co:9098/api/v1",
     "resource" : "http://melnyk.co:9098/api/v1/resource/",
     "profile" : "I am a hands-on, highly competent software engineer with 12 years’ experience designing, programming and testing software across a variety of platforms.I have worked on numerous projects from concept to completion. A specialist in C# and .NET, I take pride in coding to consistently high standards and regularly refresh my skills to ensure I keep up with ongoing developments.",
-    "social": [
-        {name: "facebook", link: "http://fb.com/aywengo"},
-        {name: "twitter", link: "https://twitter.com/aywengo"},
-        {name: "github", link: "https://github.com/aywengo"},
-        {name: "linkedin", link: "https://pl.linkedin.com/in/aywengo"}],
     "mail": "roman@melnyk.co",
     "tel": "",
     "address": 'Miel\u017cy\u0144skiego 14, 61-725 Pozna\u0144',

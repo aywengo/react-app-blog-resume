@@ -46,7 +46,7 @@ var App = React.createClass({
                             <AddressBlock address={Model.address}
                                           mail={Model.mail}
                                           telnumber={Model.tel}/>
-                            <SocialNetworks networks={Model.social}
+                            <SocialNetworks resource="social"
                                             mail={Model.mail}/>
                             {twitterBar}
                         </div>

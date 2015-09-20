@@ -12,12 +12,9 @@ var Head = React.createClass({
     render: function () {
         return <div className="head">
             <img src={this.state.logo} alt={this.state.name}/>
-
             <div className="name">
                 <p className="first">{this.state.name}</p>
-
                 <p className="last">{this.state.surname}</p>
-
                 <p className="title">{this.state.position}</p>
             </div>
         </div>

@@ -38,7 +38,8 @@ var ContactForm = React.createClass({
         var subject = {
             name: this.refs.uname.getDOMNode().value.toString(),
             email: this.refs.uemail.getDOMNode().value.toString(),
-            text: this.refs.umessage.getDOMNode().value.toString()
+            text: this.refs.umessage.getDOMNode().value.toString(),
+            timestamp: new Date().getUTCMilliseconds()
         };
         var isValid = Revalidator.validate(subject, getValidationSchema());
 
