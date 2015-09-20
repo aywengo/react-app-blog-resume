@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react');
-var Model = require('./model.js');
+var Config = require('./config.js');
 var Revalidator = require('revalidator');
 var ValidationInfoBlock = require('./ValidationInfoBlock.jsx');
 
@@ -39,7 +39,7 @@ var ContactForm = React.createClass({
             name: this.refs.uname.getDOMNode().value.toString(),
             email: this.refs.uemail.getDOMNode().value.toString(),
             text: this.refs.umessage.getDOMNode().value.toString(),
-            timestamp: new Date().getUTCMilliseconds()
+            timestamp: Date.now()
         };
         var isValid = Revalidator.validate(subject, getValidationSchema());
 
@@ -50,7 +50,7 @@ var ContactForm = React.createClass({
 
         var jso = JSON.stringify(subject);
         $.ajax({
-            url: Model.service + '/send',
+            url: Config.service + '/send',
             contentType: 'text/plain',
             crossDomain: true,
             type: 'POST',

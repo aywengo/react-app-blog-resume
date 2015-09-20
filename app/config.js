@@ -1,4 +1,4 @@
-var DbModel = {
+var Config = {
     "title": "Roman Melnyk personal blog",
     "author": "Roman Melnyk",
     "gaid": "UA-17275263-4",
@@ -17,4 +17,4 @@ var DbModel = {
     "I\'ve got honor Master degree in electrotechnical engineering and expert Diploma of Computer Systems and Networks.  During last 12 years of my life, I\'ve been professionally coding on Pascal, Delphi, PHP, C++, C#. Now I am trying my skills with Scala and JavaScript. Hope I\'ll switch shortly to this new fast growing stream."
 };
 
-module.exports = DbModel;
+module.exports = Config;

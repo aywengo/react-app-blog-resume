@@ -2,10 +2,10 @@
 var React = require('react');
 var routes = require('./routes.js');
 var Router = require('react-router');
-var DbModel = require('./model.js');
+var Config = require('./config.js');
 var Ga = require('react-ga');
 
-Ga.initialize(DbModel.gaid);
+Ga.initialize(Config.gaid);
 Router.run(routes, Router.HashLocation, function (Handler, state) {
     Ga.pageview(state.pathname);
     React.render(<Handler/>, document.body);

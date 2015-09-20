@@ -13,7 +13,7 @@ var SocialNetworkBar = require('./../app/SocialNetworkBar.jsx');
 var WidgetTwitter = require('./../app/WidgetTwitter.jsx');
 var stubRouterContext = require('./stubRouterContext.js');
 var React = require('react/addons');
-var blog = require('./../app/model.js');
+var config = require('./../app/config.js');
 var TestUtils = React.addons.TestUtils;
 var fs = require('fs');
 var globaldocument = require('global');
@@ -26,8 +26,8 @@ describe("App", function () {
         app = TestUtils.renderIntoDocument(<Subject/>);
     });
 
-    it("should render header: from model.js title prop", function () {
-        expect(global.document.title).toEqual(blog.title);
+    it("should render header: from config.js title prop", function () {
+        expect(global.document.title).toEqual(config.title);
     });
 
     it("should be wrapped with a div", function () {
@@ -111,7 +111,7 @@ describe("Education", function () {
 describe("EducationItems", function () {
 
     it("should be wrapped with a div", function () {
-        var app = TestUtils.renderIntoDocument(<EducationItems header="test" items={blog.education}/>);
+        var app = TestUtils.renderIntoDocument(<EducationItems header="test" items={config.education}/>);
         expect(app.getDOMNode().tagName).toEqual('DIV');
     });
 });

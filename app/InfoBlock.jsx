@@ -1,12 +1,12 @@
 var React = require('react');
 var SubnavContainer = require('./SubnavContainer.jsx');
-var Model = require('./model.js');
+var Config = require('./config.js');
 
 var InfoBlock = React.createClass({
     render: function () {
         return  <div>
                     <div className="desc">
-                        <p>{Model.text}</p>
+                        <p>{Config.text}</p>
                     </div>
             <SubnavContainer />
         </div>;

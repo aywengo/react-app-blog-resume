@@ -1,6 +1,6 @@
 var React = require('react');
 var Request = require('request');
-var Model = require('./model.js');
+var Config = require('./config.js');
 var Spinner = require('react-spinner');
 
 // Takes an ISO time and returns a string representing how
@@ -35,7 +35,7 @@ var WidgetTwitter = React.createClass({
     },
     componentDidMount: function () {
         var count = this.props.count == undefined ? 3 : this.props.count;
-        Request.get(Model.service + "/getTweets/" + count,
+        Request.get(Config.service + "/getTweets/" + count,
             function (error, response, body) {
                 if (!error && response.statusCode == 200 && !body.isEmpty) {
                     var data = JSON.parse(body);

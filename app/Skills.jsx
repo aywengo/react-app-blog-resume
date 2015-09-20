@@ -1,5 +1,5 @@
 var React = require('react');
-var Model = require('./model.js');
+var Config = require('./config.js');
 var Request = require('request');
 var Spinner = require('react-spinner');
 
@@ -12,7 +12,7 @@ var Skills = React.createClass({
         elementBody = <Spinner />
     },
     componentDidMount: function () {
-        Request.get(Model.resource + "skills",
+        Request.get(Config.resource + "skills",
             function (error, response, body) {
                 if (!error && response.statusCode == 200 && !body.isEmpty) {
                     var data = JSON.parse(body);

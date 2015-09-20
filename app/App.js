@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react');
-var Model = require('./model.js');
+var Config = require('./config.js');
 var SocialNetworks = require('./SocialNetworkBar.jsx');
 var WidgetTwitter = require('./WidgetTwitter.jsx');
 var AddressBlock = require('./AddressBlock.jsx');
@@ -15,7 +15,7 @@ var RouteHandler = Router.RouteHandler;
 var App = React.createClass({
     mixins: [Router.State],
     componentDidMount: function () {
-        document.title = Model.title;
+        document.title = Config.title;
     },
     render: function () {
         var twitterBar,infoBlock,mainPart;
@@ -35,25 +35,25 @@ var App = React.createClass({
 
                     <div className="content">
                         <div className="info">
-                            <Head logo={Model.logo}
-                                  position={Model.position}
-                                  name={Model.name}
-                                  surname={Model.surname}/>
+                            <Head logo={Config.logo}
+                                  position={Config.position}
+                                  name={Config.name}
+                                  surname={Config.surname}/>
                             <br className="clear"/>
                             {infoBlock}
                         </div>
                         <div className={(this.isActive('/profile') || this.isActive('/')) ? "sidebar hidden" : "topAddress hidden"}>
-                            <AddressBlock address={Model.address}
-                                          mail={Model.mail}
-                                          telnumber={Model.tel}/>
+                            <AddressBlock address={Config.address}
+                                          mail={Config.mail}
+                                          telnumber={Config.tel}/>
                             <SocialNetworks resource="social"
-                                            mail={Model.mail}/>
+                                            mail={Config.mail}/>
                             {twitterBar}
                         </div>
                         <br className="clear"/>
                         {mainPart}
                     </div>
-                    <Footer author={Model.author}/>
+                    <Footer author={Config.author}/>
                 </div>
             </div>
         );

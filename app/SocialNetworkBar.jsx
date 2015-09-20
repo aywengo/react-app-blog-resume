@@ -1,5 +1,5 @@
 var React = require('react');
-var Model = require('./model.js');
+var Config = require('./config.js');
 var Request = require('request');
 var Spinner = require('react-spinner');
 
@@ -15,7 +15,7 @@ var SocialNetworkBar = React.createClass({
         elementBody = <Spinner />
     },
     componentDidMount: function () {
-        Request.get(Model.resource + this.props.resource,
+        Request.get(Config.resource + this.props.resource,
             function (error, response, body) {
                 if (!error && response.statusCode == 200 && !body.isEmpty) {
                     var data = JSON.parse(body);
