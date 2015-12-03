@@ -1,4 +1,8 @@
-/dist
+/dist/robots.txt
+/dist/main.js
+/dist/main.css
+/dist/social_icons
+/dist/images
 /build
 node_modules
 _template
