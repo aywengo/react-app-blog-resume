@@ -1,3 +1,14 @@
+/build/images
+/build/vendors.js
+/build/specs.js
+/build/main.css
+/build/robots.txt
+/build/main.js
+/dist/robots.txt
+/dist/main.js
+/dist/main.css
+/dist/social_icons
+/dist/images
 node_modules
 _template
 .idea
