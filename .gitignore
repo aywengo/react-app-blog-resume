@@ -11,4 +11,5 @@
 /dist/images
 node_modules
 _template
+/build/social_icons
 .idea
