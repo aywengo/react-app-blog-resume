@@ -62,7 +62,7 @@ var WidgetTwitter = React.createClass({
             <a href="http://stackexchange.com/users/470057">
                 <img src="http://stackexchange.com/users/flair/470057.png" width="208" height="58" alt="profile for Roman Melnyk on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Roman Melnyk on Stack Exchange, a network of free, community-driven Q&amp;A sites"/>
             </a>
-            <h6 className="widget-title">Latest tweets</h6>
+            <h6 className="widget-title">Latest tweets:</h6>
             <ul>
                 <span>
                     {tweetsBody}
